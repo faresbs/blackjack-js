@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+        <p id="dealer-el"></p>
+        <p id="dealer_cards-el">Dealer's Cards:</p>
+        <p id="dealer_sum-el">Dealer's Sum:</p>
+        
+        <div class="container">
+            <div id="dealer-cards" class="cards-container"></div>
+            <div id="player-cards" class="cards-container"></div>
+        </div> 
+
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Your Cards:</p>
+        <p id="sum-el">Sum:</p>
+
+        <!-- Start button in its own container -->
+        <div class="start-button-container">
+            <button onclick="startGame()">START Round</button>
+        </div>
+
+        <!-- Other buttons in a separate container -->
+        <div class="action-buttons-container">
+            <button onclick="newCard()">Hit!</button>
+            <button onclick="stand()">Stand!</button>
+        </div>
+        
+        <p id="player-el"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
